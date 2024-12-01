@@ -1,4 +1,5 @@
 import React from "react";
+import CybersecurityProjects from "./components/CybersecurityProjects";
 
 function App() {
     return (
@@ -51,25 +52,7 @@ function App() {
 
             {/* Projects Section */}
             <section id="projects" style={{ padding: "2rem" }}>
-                <h2>Cybersecurity Projects</h2>
-                <ul>
-                    <li>
-                        <strong>Vulnerability Assessment Tool:</strong> Built a Python-based tool to automate vulnerability scanning using
-                        Nmap and OpenVAS under the Headstarter Fellowship.
-                    </li>
-                    <li>
-                        <strong>CTF Challenges:</strong> Solved Capture The Flag (CTF) challenges involving reverse engineering, web
-                        exploitation, and cryptography during Headstarter Fellowship.
-                    </li>
-                    <li>
-                        <strong>SIEM Integration:</strong> Deployed and configured a Splunk instance to monitor simulated network traffic
-                        for anomalies and potential threats.
-                    </li>
-                    <li>
-                        <strong>Encryption Algorithms:</strong> Developed and tested secure encryption algorithms as part of coursework
-                        in Cryptography & Security.
-                    </li>
-                </ul>
+                <CybersecurityProjects />
             </section>
 
             {/* Contact Section */}
