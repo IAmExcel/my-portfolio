@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import CybersecurityProjects from "./components/CybersecurityProjects";
 
 function App() {
+    const [darkMode, setDarkMode] = useState(false);
+
+    const pageStyle = {
+        background: darkMode ? "#1a1a1a" : "#ffffff",
+        color: darkMode ? "#ffffff" : "#000000",
+        minHeight: "100vh"
+    };
+
+    const headerStyle = {
+        textAlign: "center",
+        padding: "1rem",
+        background: darkMode ? "#000000" : "#282c34",
+        color: "white"
+    };
+
     return (
-        <div>
+        <div style={pageStyle}>
             {/* Header Section */}
-            <header style={{ textAlign: "center", padding: "1rem", background: "#282c34", color: "white" }}>
+            <header style={headerStyle}>
                 <h1>Cybersecurity Portfolio</h1>
                 <nav>
                     <a href="#about" style={{ margin: "0 1rem", color: "white", textDecoration: "none" }}>About Me</a>
@@ -13,16 +28,19 @@ function App() {
                     <a href="#projects" style={{ margin: "0 1rem", color: "white", textDecoration: "none" }}>Projects</a>
                     <a href="#contact" style={{ margin: "0 1rem", color: "white", textDecoration: "none" }}>Contact</a>
                 </nav>
+                <button onClick={() => setDarkMode(!darkMode)} style={{ marginTop: "1rem" }}>
+                    {darkMode ? "Light Mode" : "Dark Mode"}
+                </button>
             </header>
 
             {/* About Me Section */}
             <section id="about" style={{ padding: "2rem" }}>
                 <h2>About Me</h2>
                 <p>
-                    Hi! I'm Eric Koch, a passionate Cybersecurity professional dedicated to protecting systems and data from emerging threats.
-                    I am currently pursuing my Certified in Cybersecurity certification (ISC²) and have hands-on experience in vulnerability
-                    assessments, penetration testing, and security audits. My goal is to contribute to building robust and secure infrastructures
-                    while advancing my skills in ethical hacking and cybersecurity defense strategies.
+                    I'm Eric Koch, an experienced Cybersecurity Analyst focused on safeguarding organizations against emerging threats.
+                    I specialize in vulnerability assessments, penetration testing and security audits to ensure robust infrastructures.
+                    My certifications include CompTIA Security+ and Microsoft Security, Compliance and Identity Fundamentals, and I'm
+                    currently pursuing the ISC² Certified in Cybersecurity credential.
                 </p>
             </section>
 
@@ -50,6 +68,16 @@ function App() {
                 </ul>
             </section>
 
+            {/* Certifications Section */}
+            <section id="certifications" style={{ padding: "2rem" }}>
+                <h2>Certifications</h2>
+                <ul>
+                    <li>CompTIA Security+</li>
+                    <li>Microsoft Certified Security Compliance and Identity Fundamentals</li>
+                    <li>Microsoft Certified Dynamics 365 Fundamentals (CRM)</li>
+                </ul>
+            </section>
+
             {/* Projects Section */}
             <section id="projects" style={{ padding: "2rem" }}>
                 <CybersecurityProjects />
@@ -59,7 +87,7 @@ function App() {
             <section id="contact" style={{ padding: "2rem", background: "#f4f4f4" }}>
                 <h2>Contact</h2>
                 <p>Email: <a href="mailto:ericsaviorkoch1@gmail.com">ericsaviorkoch1@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/eric-koch-6118a6262/" target="_blank">LinkedIn Profile</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/eric-koch0101/" target="_blank">LinkedIn Profile</a></p>
                 <p>GitHub: <a href="https://github.com/IAmExcel" target="_blank">GitHub Profile</a></p>
             </section>
 

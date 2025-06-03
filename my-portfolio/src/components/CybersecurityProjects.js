@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CybersecurityProjects = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
   const projects = [
     {
       title: "Vulnerability Assessment Tool",
@@ -82,13 +84,24 @@ const CybersecurityProjects = () => {
       <h2>Cybersecurity Projects</h2>
       {projects.map((project, index) => (
         <div key={index} style={{ marginBottom: "20px" }}>
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
-          <ul>
-            {project.features.map((feature, i) => (
-              <li key={i}>{feature}</li>
-            ))}
-          </ul>
+          <h3
+            style={{ cursor: "pointer" }}
+            onClick={() =>
+              setActiveIndex(activeIndex === index ? null : index)
+            }
+          >
+            {project.title}
+          </h3>
+          {activeIndex === index && (
+            <div>
+              <p>{project.description}</p>
+              <ul>
+                {project.features.map((feature, i) => (
+                  <li key={i}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       ))}
     </div>
