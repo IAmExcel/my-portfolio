@@ -21,11 +21,13 @@ function App() {
         <div style={pageStyle}>
             {/* Header Section */}
             <header style={headerStyle}>
-                <h1>Cybersecurity Portfolio</h1>
+                <h1>Eric Koch - Cybersecurity Portfolio</h1>
                 <nav>
                     <a href="#about" style={{ margin: "0 1rem", color: "white", textDecoration: "none" }}>About Me</a>
                     <a href="#education" style={{ margin: "0 1rem", color: "white", textDecoration: "none" }}>Education</a>
+                    <a href="#experience" style={{ margin: "0 1rem", color: "white", textDecoration: "none" }}>Experience</a>
                     <a href="#projects" style={{ margin: "0 1rem", color: "white", textDecoration: "none" }}>Projects</a>
+                    <a href="#resume" style={{ margin: "0 1rem", color: "white", textDecoration: "none" }}>Resume</a>
                     <a href="#contact" style={{ margin: "0 1rem", color: "white", textDecoration: "none" }}>Contact</a>
                 </nav>
                 <button onClick={() => setDarkMode(!darkMode)} style={{ marginTop: "1rem" }}>
@@ -47,7 +49,8 @@ function App() {
             {/* Education Section */}
             <section id="education" style={{ padding: "2rem", background: "#f4f4f4" }}>
                 <h2>Education</h2>
-                <h3>Manhattan College - Bachelor of Science in Computer Science (2026)</h3>
+                <h3>Manhattan College - Bachelor of Science in Computer Science</h3>
+                <p>Expected Graduation: May 2026</p>
                 <ul>
                     <li>Courses Taken:</li>
                     <ul>
@@ -78,6 +81,26 @@ function App() {
                 </ul>
             </section>
 
+            {/* Experience Section */}
+            <section id="experience" style={{ padding: "2rem", background: "#f4f4f4" }}>
+                <h2>Work History</h2>
+                <ul>
+                    <li>Cybersecurity Fellow, Headstarter (2024)</li>
+                    <li>Freelance Security Researcher (2023&ndash;Present)</li>
+                    <li>Help Desk Technician, Manhattan College (2022&ndash;2023)</li>
+                </ul>
+            </section>
+
+            {/* Resume Section */}
+            <section id="resume" style={{ padding: "2rem" }}>
+                <h2>Resume</h2>
+                <p>
+                    Download my complete resume
+                    {" "}
+                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+                </p>
+            </section>
+
             {/* Projects Section */}
             <section id="projects" style={{ padding: "2rem" }}>
                 <CybersecurityProjects />
@@ -87,8 +110,26 @@ function App() {
             <section id="contact" style={{ padding: "2rem", background: "#f4f4f4" }}>
                 <h2>Contact</h2>
                 <p>Email: <a href="mailto:ericsaviorkoch1@gmail.com">ericsaviorkoch1@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/eric-koch0101/" target="_blank">LinkedIn Profile</a></p>
-                <p>GitHub: <a href="https://github.com/IAmExcel" target="_blank">GitHub Profile</a></p>
+                <p>
+                    LinkedIn:
+                    <a
+                        href="https://www.linkedin.com/in/eric-koch0101/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn Profile
+                    </a>
+                </p>
+                <p>
+                    GitHub:
+                    <a
+                        href="https://github.com/IAmExcel"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub Profile
+                    </a>
+                </p>
             </section>
 
             {/* Footer */}

@@ -3,6 +3,6 @@ import App from './App';
 
 test('renders portfolio header', () => {
   render(<App />);
-  const heading = screen.getByText(/Cybersecurity Portfolio/i);
+  const heading = screen.getByText(/Eric Koch - Cybersecurity Portfolio/i);
   expect(heading).toBeInTheDocument();
 });
