@@ -1,8 +1,8 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 
@@ -14,52 +14,60 @@ function Timeline() {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="Feb 2022 – Present"
+            iconStyle={{ background: '#5000ca', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Cybersecurity Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Best Value NY INC, Bronx, NY</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Performed encryption implementations and configured firewalls to enhance network security.
+              Conducted incident investigations, improved response workflows, and performed comprehensive
+              security audits to ensure regulatory compliance.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="May 2024 – Aug 2024"
+            iconStyle={{ background: '#5000ca', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Cybersecurity Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">HeadStarter, Bronx, NY</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Built Python-based vulnerability assessment and malware analysis tools. Conducted penetration
+              testing with Metasploit and Nmap, monitored traffic, and implemented AES-based secure file
+              transfers. Authored detailed mitigation reports.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="2023 – Present"
+            iconStyle={{ background: '#5000ca', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Freelance Security Researcher</h3>
+            <h4 className="vertical-timeline-element-subtitle">Remote</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+              Conducting independent security research including vulnerability testing, threat modeling,
+              and cryptographic implementations. Contributing to open-source tools and collaborating on
+              penetration testing simulations and capture-the-flag (CTF) exercises.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            className="vertical-timeline-element--education"
+            date="2022 – 2026"
+            iconStyle={{ background: '#9C27B0', color: 'white' }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <h3 className="vertical-timeline-element-title">Bachelor of Science in Computer Science</h3>
+            <h4 className="vertical-timeline-element-subtitle">Manhattan College, NY</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+              Relevant Coursework: Cryptography & Security, Computer Networks, Operating Systems, Systems
+              Programming, Database Systems, Data Structures and Algorithms.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

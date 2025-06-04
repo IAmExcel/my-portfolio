@@ -1,44 +1,39 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
+import '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faLinux, faPython } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
     "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+    "Wireshark",
+    "Nmap",
+    "Metasploit",
+    "Kali Linux",
+    "Burp Suite",
+    "OpenVAS",
+    "Socket Programming",
+    "AES Encryption"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Security Audits",
+    "Vulnerability Scanning",
+    "Penetration Testing",
+    "Incident Response",
+    "Firewall Configuration",
+    "SIEM Monitoring",
+    "Password Hardening",
+    "Malware Analysis"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "CompTIA Security+",
+    "Microsoft Security Fundamentals",
+    "Certified in Cybersecurity (ISC2 - In Progress)",
+    "Cybersecurity Fellow @ Headstarter",
+    "B.S. Computer Science (2026)",
 ];
 
 function Expertise() {
@@ -48,11 +43,11 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <FontAwesomeIcon icon={faLinux} size="3x"/>
+                    <h3>Cybersecurity Skills</h3>
+                    <p>I specialize in identifying and mitigating threats using tools like Nmap, Metasploit, and Wireshark. My expertise includes vulnerability scanning, security audits, and penetration testing of live and simulated environments.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tools & Techniques:</span>
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -60,11 +55,11 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faReact} size="3x"/>
+                    <h3>Security Operations</h3>
+                    <p>I have experience developing custom security scripts, analyzing malware behavior, and responding to incidents with proper containment and remediation procedures.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Operations Expertise:</span>
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -73,10 +68,10 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <h3>Certifications & Credentials</h3>
+                    <p>I am currently pursuing the ISC2 Certified in Cybersecurity certification and hold multiple credentials in security and compliance. My academic foundation in Computer Science supports this hands-on experience.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Credentials:</span>
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
